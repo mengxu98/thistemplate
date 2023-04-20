@@ -11,7 +11,6 @@ README.html
 # Directories that start with _
 _*/
 
-## https://github.com/github/gitignore/blob/master/R.gitignore
 # History files
 .Rhistory
 .Rapp.history
