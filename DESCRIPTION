@@ -1,5 +1,5 @@
 Package: mxpkgdown
-Title: Custom 'pkgdown' Template for grrrck
+Title: Custom 'pkgdown' Template for github.io
 Version: 0.0.0.1
 Authors@R: 
     person("Meng", "Xu", , "mengxu98@qq.com", role = c("aut", "cre"),
