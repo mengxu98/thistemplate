@@ -4,7 +4,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-A pkgdown theme and template for my packages. [Bare-bones demo](https://pkg.garrickadenbuie.com/grkgdown).
+A pkgdown theme and template for packages. [inferCSN](https://mengxu98.github.io/inferCSN/).
 
 ## Usage
 
@@ -12,17 +12,17 @@ A pkgdown theme and template for my packages. [Bare-bones demo](https://pkg.garr
 
 ```yaml
 template:
-  package: grkgdown
+  package: mxpkgdown
 
 navbar:
   components:
     github:
       icon: fab fa-github fa-lg
-      href: https://github.com/gadenbuie/js4shiny
+      href: https://github.com/mengxu98/inferCSN
 ```
 
 ### DESCRIPTION
 
 ```
-Config/Needs/website: gadenbuie/grkgdown
+Config/Needs/website: mengxu98/mxpkgdown
 ```
