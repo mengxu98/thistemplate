@@ -1,10 +1,10 @@
 
-# grkgdown
+# ***mxpkgdown***
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-A pkgdown theme and template for packages. [inferCSN](https://mengxu98.github.io/inferCSN/).
+A pkgdown theme and template for packages. Such as: [inferCSN](https://mengxu98.github.io/inferCSN/).
 
 ## Usage
 
