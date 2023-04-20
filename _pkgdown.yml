@@ -1,3 +1,14 @@
 url: ~
+
 template:
-  bootstrap: 5
+  package: mxpkgdown
+
+reference:
+- title: Do some things
+  contents:
+  - '`test`'
+  - '`test2`'
+- title: Do some other things
+  contents:
+  - '`test3`'
+  - '`test4`'
