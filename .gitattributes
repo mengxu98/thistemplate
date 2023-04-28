@@ -1,3 +1,5 @@
 *.html linguist-language=html
 *.js linguist-language=js
 *.css linguist-language=css
+docs/* linguist-documentation=false
+docs/* linguist-vendored
