@@ -48,15 +48,11 @@ navbar:
     right:
     - news
     - github
-    - author
     - mengxu
   components:
     reference:
       text: Reference
       href: reference/index.html
-    author:
-      text: Author
-      href: authors.html
     # news:
     #   icon: far fa-newspaper fa-lg
     #   href: news/index.html
