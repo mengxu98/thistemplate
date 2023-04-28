@@ -4,6 +4,7 @@
 .RData
 .DS_Store
 README.html
+docs
 
 # vscode
 .history/
@@ -57,7 +58,6 @@ rsconnect/
 # Icon must end with two \r
 Icon
 
-
 # Thumbnails
 ._*
 
@@ -76,5 +76,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-# docs
-docs
