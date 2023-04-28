@@ -1,16 +1,16 @@
-
 # ***mxpkgdown***
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-A pkgdown theme and template for packages. Such as: [inferCSN](https://mengxu98.github.io/inferCSN/).
+A pkgdown theme and template for packages. Such as: [*inferCSN*](https://mengxu98.github.io/inferCSN/).
 
 ## Usage
 
-### _pkgdown.yml
+#### *\_pkgdown.yml*
 
-```yaml
+``` yaml
 template:
   package: mxpkgdown
 
@@ -18,11 +18,15 @@ navbar:
   components:
     github:
       icon: fab fa-github fa-lg
-      href: https://github.com/mengxu98/inferCSN
+      href: "The link of repository"
 ```
 
-### DESCRIPTION
+#### *DESCRIPTION*
 
-```
+``` yaml
 Config/Needs/website: mengxu98/mxpkgdown
 ```
+
+## Acknowledge
+
+The build of [*mxpkgdown*](https://github.com/mengxu98/mxpkgdown) referred [*gadenbuie*](https://github.com/gadenbuie)'s repository [*grkgdown*](https://github.com/gadenbuie/grkgdown).
