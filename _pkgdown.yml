@@ -1,14 +1,18 @@
-url: ~
+url: https://mengxu98.github.io/mxpkgdown/
 
 template:
   package: mxpkgdown
 
 reference:
-- title: Do some things
+- title: Testing
   contents:
   - '`test`'
-  - '`test2`'
-- title: Do some other things
-  contents:
-  - '`test3`'
-  - '`test4`'
+# - title: Other testing
+#   contents:
+#   - '`test`'
+
+navbar:
+  components:
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/mengxu98/mxpkgdown
