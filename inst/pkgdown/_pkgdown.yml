@@ -48,18 +48,21 @@ navbar:
     right:
     - news
     - github
-    - twitter
-    - garrick
+    - author
+    - mengxu
   components:
     reference:
       text: Reference
       href: reference/index.html
+    author:
+      text: Author
+      href: authors.html
     # news:
     #   icon: far fa-newspaper fa-lg
     #   href: news/index.html
     #   text: ""
     #   title: "Changelog"
-    garrick:
+    mengxu:
       icon: fas fa-home fa-lg
       href: https://github.com/mengxu98
       title: MengXu
