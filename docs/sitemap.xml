@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://mengxu98.github.io/mxpkgdown/404.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://mengxu98.github.io/mxpkgdown/authors.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://mengxu98.github.io/mxpkgdown/index.html</loc>
   </url>
   <url>
-    <loc>/LICENSE-text.html</loc>
+    <loc>https://mengxu98.github.io/mxpkgdown/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://mengxu98.github.io/mxpkgdown/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://mengxu98.github.io/mxpkgdown/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/test.html</loc>
-  </url>
-  <url>
-    <loc>/reference/test2.html</loc>
-  </url>
-  <url>
-    <loc>/reference/test3.html</loc>
-  </url>
-  <url>
-    <loc>/reference/test4.html</loc>
+    <loc>https://mengxu98.github.io/mxpkgdown/reference/test.html</loc>
   </url>
 </urlset>

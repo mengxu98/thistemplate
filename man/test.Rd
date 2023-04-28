@@ -10,6 +10,6 @@ test()
 Test function
 }
 \examples{
-
 test()
+
 }
