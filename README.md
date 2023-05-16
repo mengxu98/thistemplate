@@ -18,7 +18,7 @@ navbar:
   components:
     github:
       icon: fab fa-github fa-lg
-      href: "The link of repository"
+      href: "The link of repository" # Such as: https://github.com/mengxu98/inferCSN
 ```
 
 #### *DESCRIPTION*
