@@ -29,4 +29,4 @@ Config/Needs/website: mengxu98/mxpkgdown
 
 ## Acknowledge
 
-The build of [*mxpkgdown*](https://github.com/mengxu98/mxpkgdown) referred [*gadenbuie*](https://github.com/gadenbuie)'s repository [*grkgdown*](https://github.com/gadenbuie/grkgdown).
+The build of [*`mxpkgdown`*](https://github.com/mengxu98/mxpkgdown) referred [*`gadenbuie`*](https://github.com/gadenbuie)'s repository [*`grkgdown`*](https://github.com/gadenbuie/grkgdown).
