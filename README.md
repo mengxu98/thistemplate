@@ -4,7 +4,7 @@
 
 <!-- badges: end -->
 
-A pkgdown theme and template for packages. Such as: [*inferCSN*](https://mengxu98.github.io/inferCSN/).
+A theme and template for `pkgdown` page. Such as: [*`inferCSN`*](https://mengxu98.github.io/inferCSN/).
 
 ## Usage
 
