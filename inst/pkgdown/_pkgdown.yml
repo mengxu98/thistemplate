@@ -16,7 +16,7 @@ template:
     bg: "#f9fafa"
     fg: "#0e181e"
     primary: "#0b535d"   # blue-20
-    secondary: "#4a466f" # purple-20
+    secondary: "#6C7B8B"
     info: "#4a636c"      # slate-30
     success: "#7ab26f"   # green-60
     warning: "#ef8c02"   # orange-60
