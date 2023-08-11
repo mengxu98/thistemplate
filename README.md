@@ -1,10 +1,4 @@
 
-<!-- badges: start -->
-
-[![R-CMD-check](https://github.com/mengxu98/inferCSN/workflows/R-CMD-check/badge.svg)](https://github.com/mengxu98/inferCSN/actions)
-
-<!-- badges: end -->
-
 # ***mxtemplate***
 
 ## Overview
