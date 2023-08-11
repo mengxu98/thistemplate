@@ -8,40 +8,39 @@ development:
 
 template:
   # opengraph:
-  #   twitter:
   #     creator: "@MengXu"
   #     card: summary
   bootstrap: 5
   bslib:
-    bg: "#f9fafa"
-    fg: "#0e181e"
+    bg: "#ffffff"
+    fg: "#000000"
     primary: "#0b535d"   # blue-20
     secondary: "#6C7B8B"
     info: "#4a636c"      # slate-30
     success: "#7ab26f"   # green-60
     warning: "#ef8c02"   # orange-60
     danger: "#c94150"    # red-40
-    navbar-light-color: "#0b535d"
-    code_bg: "#f9fafa"
-    pre_bg: "#f9fafa"
-    heading_font: {google: "Outfit"}
-    code_font: {google: "IBM Plex Mono"}
+    navbar-light-color: "#114493"
+    code_bg: "#ffffff"
+    pre_bg: "#114493"
     font-size-base: 1.1rem
     pkgdown-nav-height: 72px
     border-radius: 0
     border-radius-sm: 0
     border-radius-lg: 0
-    base_font: |
-      -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif
+    heading_font: {google: "Outfit"}
+    code_font: {google: "Source Code Pro"}
+    base_font: {google: "Prompt"}
+
   includes:
     after_body: >
       <script>window.jQuery('.navbar-brand + small').addClass(['badge', 'bg-secondary', 'text-light']).removeClass('text-muted')</script>
 
 navbar:
+  bg: "#0c387f"
   type: light
   structure:
     left:
-    - intro
     - reference
     - articles
     - tutorials
