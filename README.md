@@ -1,10 +1,17 @@
-# ***mxpkgdown***
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/mengxu98/inferCSN/workflows/R-CMD-check/badge.svg)](https://github.com/mengxu98/inferCSN/actions)
+
 <!-- badges: end -->
 
-A theme and template for `pkgdown` page. Such as: [*`inferCSN`*](https://mengxu98.github.io/inferCSN/).
+# ***mxtemplate***
+
+## Overview
+
+A theme and template for
+[*`pkgdown`*](https://github.com/r-lib/pkgdown/) page. Such as:
+[*`inferCSN`*](https://mengxu98.github.io/inferCSN/).
 
 ## Usage
 
@@ -12,21 +19,24 @@ A theme and template for `pkgdown` page. Such as: [*`inferCSN`*](https://mengxu9
 
 ``` yaml
 template:
-  package: mxpkgdown
+  package: mxtemplate
 
 navbar:
   components:
     github:
       icon: fab fa-github fa-lg
-      href: "The link of repository" # Such as: https://github.com/mengxu98/inferCSN
+      href: The link of package # Such as: https://github.com/mengxu98/inferCSN
 ```
 
 #### *DESCRIPTION*
 
 ``` yaml
-Config/Needs/website: mengxu98/mxpkgdown
+Config/Needs/website: mengxu98/mxtemplate
 ```
 
 ## Acknowledge
 
-The build of [*`mxpkgdown`*](https://github.com/mengxu98/mxpkgdown) referred [*`gadenbuie`*](https://github.com/gadenbuie)'s repository [*`grkgdown`*](https://github.com/gadenbuie/grkgdown).
+The [*`mxtemplate`*](https://github.com/mengxu98/mxtemplate) package
+referred [*`bslib`*](https://github.com/rstudio/bslib/tree/main) package
+and [*`gadenbuie`*](https://github.com/gadenbuie)’s
+[*`grkgdown`*](https://github.com/gadenbuie/grkgdown) package.
