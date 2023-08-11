@@ -7,11 +7,14 @@ reference:
 - title: Testing
   contents:
   - '`test`'
-# - title: Other testing
-#   contents:
-#   - '`test`'
 
 navbar:
+  bg: "#0c387f"
+  type: light
+
+  structure:
+    left:  [articles, reference]
+
   components:
     github:
       icon: fab fa-github fa-lg
