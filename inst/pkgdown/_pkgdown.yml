@@ -38,7 +38,8 @@ template:
 
 navbar:
   bg: "#0c387f"
-  type: light
+  # type: light
+  type: dark
   structure:
     left:
     - reference

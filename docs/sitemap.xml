@@ -1,33 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/404.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/404.html</loc>
   </url>
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/articles/index.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/articles/test.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/articles/test.html</loc>
   </url>
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/authors.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/authors.html</loc>
   </url>
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/index.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/index.html</loc>
   </url>
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/LICENSE-text.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/LICENSE.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/README1.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://mengxu98.github.io/mxpkgdown/reference/test.html</loc>
+    <loc>https://mengxu98.github.io/mxtemplate/reference/test.html</loc>
   </url>
 </urlset>
