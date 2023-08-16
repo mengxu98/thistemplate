@@ -1,7 +1,7 @@
-url: https://mengxu98.github.io/mxpkgdown/
+url: https://mengxu98.github.io/mxtemplate/
 
 template:
-  package: mxpkgdown
+  package: mxtemplate
 
 reference:
 - title: Testing
@@ -9,8 +9,8 @@ reference:
   - '`test`'
 
 navbar:
-  bg: "#0c387f"
-  type: light
+  # bg: "#0c387f"
+  # type: light
 
   structure:
     left:  [articles, reference]
@@ -18,4 +18,4 @@ navbar:
   components:
     github:
       icon: fab fa-github fa-lg
-      href: https://github.com/mengxu98/mxpkgdown
+      href: https://github.com/mengxu98/mxtemplate
