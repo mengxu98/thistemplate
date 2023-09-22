@@ -1,4 +1,3 @@
-
 authors:
   MengXu:
     href: https://github.com/mengxu98
@@ -7,9 +6,6 @@ development:
   mode: auto
 
 template:
-  # opengraph:
-  #     creator: "@MengXu"
-  #     card: summary
   bootstrap: 5
   bslib:
     bg: "#ffffff"
@@ -23,7 +19,7 @@ template:
     navbar-light-color: "#114493"
     code_bg: "#ffffff"
     pre_bg: "#114493"
-    font-size-base: 1.1rem
+    font-size-base: 0.9rem
     pkgdown-nav-height: 72px
     border-radius: 0
     border-radius-sm: 0
@@ -38,8 +34,7 @@ template:
 
 navbar:
   bg: "#0c387f"
-  # type: light
-  type: dark
+  type: light
   structure:
     left:
     - reference
@@ -53,11 +48,6 @@ navbar:
     reference:
       text: Reference
       href: reference/index.html
-    # news:
-    #   icon: far fa-newspaper fa-lg
-    #   href: news/index.html
-    #   text: ""
-    #   title: "Changelog"
     mengxu:
       icon: fas fa-home fa-lg
       href: https://github.com/mengxu98
