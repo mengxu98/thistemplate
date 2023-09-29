@@ -8,7 +8,6 @@ Description: My personal pkgdown docs style
 License: MIT + file LICENSE
 URL: https://github.com/mengxu98/mxtemplate
 BugReports: https://github.com/mengxu98/mxtemplate/issues
-Config/Needs/website: mengxu98/mxtemplate
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
@@ -17,4 +16,7 @@ Suggests:
     rmarkdown,
     thematic
 VignetteBuilder: 
-    knitr
+    knitr,
+    bsicons,
+    bslib
+Config/Needs/website: mengxu98/mxtemplate

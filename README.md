@@ -1,8 +1,6 @@
 
 # ***mxtemplate***
 
-## Overview
-
 A theme and template for
 [*`pkgdown`*](https://github.com/r-lib/pkgdown/) page. Such as:
 [*`inferCSN`*](https://mengxu98.github.io/inferCSN/).
