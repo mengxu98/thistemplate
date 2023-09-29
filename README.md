@@ -1,6 +1,12 @@
 
 # ***mxtemplate***
 
+<!-- badges: start -->
+
+[![pkgdown](https://github.com/mengxu98/mxtemplate/actions/workflows/pkgdown.yaml/badge.svg)](https://mengxu98.github.io/mxtemplate/index.html)
+
+<!-- badges: end -->
+
 A theme and template for
 [*`pkgdown`*](https://github.com/r-lib/pkgdown/) page. Such as:
 [*`inferCSN`*](https://mengxu98.github.io/inferCSN/).
