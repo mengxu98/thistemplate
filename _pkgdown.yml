@@ -7,46 +7,26 @@ url: https://mengxu98.github.io/mxtemplate/
 
 template:
   package: mxtemplate
-  bootstrap: 5
-  bslib:
-    info: "#E6E6E6"
-    # base_font: {google: "Atkinson Hyperlegible"}
-    # code_font: {google: "Source Code Pro"}
-    headings-color: "#206B72"
-    link-color: "#216B73"
-    link-color-dark: "#cef4f9"
-    # link-decoration: underline dotted
-  includes:
-    in_header: >
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css">
-    after_body: >
-      <script>window.jQuery('.navbar-brand + small').addClass(['badge', 'bg-secondary', 'text-light']).removeClass('text-muted')</script>
 
 navbar:
-  bg: info
-  type: light
 
   structure:
     left:  [articles, reference, tutorials, news]
-    right: [github, mengxu, dark-mode]
+    right: [github, mengxu]
 
   components:
-    home: ~
-    dark-mode:
-      href: "#dark-mode"
-
-    reference:
-      text: Reference
-      href: reference/index.html
-
     github:
-      icon: bi-github
+      icon: fab fa-github fa-lg
       href: https://github.com/mengxu98/mxtemplate
 
     mengxu:
       icon: fas fa-home fa-lg
       href: https://github.com/mengxu98
       title: MengXu
+
+    reference:
+      text: Reference
+      href: reference/index.html
 
 reference:
 - title: Testing
