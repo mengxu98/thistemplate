@@ -1,5 +1,8 @@
 ---
 title: "Theming with bslib and thematic"
+date: "`r Sys.Date()`"
+vignetteEngine: knitr
+VignetteBuilder: knitr
 output: 
   html_document:
     code_folding: show
