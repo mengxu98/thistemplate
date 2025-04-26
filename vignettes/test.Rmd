@@ -34,7 +34,7 @@ When running this document with [`{thematic}`](https://rstudio.github.io/themati
 
 ### ggplot2
 
-```{r}
+```{r fig.alt="Scatter plot of highway miles per gallon vs engine displacement with a smooth curve"}
 library(ggplot2)
 
 ggplot(mpg, aes(displ, hwy)) +
@@ -43,12 +43,12 @@ ggplot(mpg, aes(displ, hwy)) +
 
 ### lattice
 
-```{r}
+```{r fig.alt="Lattice plot showing default settings"}
 lattice::show.settings()
 ```
 
 ### base
 
-```{r}
+```{r fig.alt="Base R plot of pressure data"}
 plot(pressure, col = thematic::thematic_get_option("accent"))
 ```
