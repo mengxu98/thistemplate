@@ -7,11 +7,12 @@ Authors@R:
            comment = c(ORCID = "0000-0002-8300-1054"))
 Description: My personal pkgdown docs style.
 License: MIT + file LICENSE
-URL: https://github.com/mengxu98/mxtemplate
+URL: https://github.com/mengxu98/mxtemplate,
+    https://mengxu98.github.io/mxtemplate
 BugReports: https://github.com/mengxu98/mxtemplate/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 Suggests: 
     bslib,
     knitr,
