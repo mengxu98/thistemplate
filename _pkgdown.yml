@@ -18,11 +18,13 @@ navbar:
     github:
       icon: fab fa-github fa-lg
       href: https://github.com/mengxu98/mxtemplate
+      aria-label: GitHub repository
 
     mengxu:
       icon: fas fa-home fa-lg
       href: https://github.com/mengxu98
       title: MengXu
+      aria-label: MengXu's GitHub profile
 
     reference:
       text: Reference
