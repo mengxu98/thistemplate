@@ -35,6 +35,8 @@ Config/Needs/website: mengxu98/mxtemplate
 ## Acknowledge
 
 The [*`mxtemplate`*](https://github.com/mengxu98/mxtemplate) package
-referred [*`bslib`*](https://github.com/rstudio/bslib/tree/main) package
-and [*`gadenbuie`*](https://github.com/gadenbuie)’s
-[*`grkgdown`*](https://github.com/gadenbuie/grkgdown) package.
+referred [*`bslib`*](https://github.com/rstudio/bslib/tree/main)
+package, [*`gadenbuie`*](https://github.com/gadenbuie)’s
+[*`grkgdown`*](https://github.com/gadenbuie/grkgdown) package and
+[*`mlr3pkgdowntemplate`*](https://github.com/mlr-org/mlr3pkgdowntemplate)
+package.

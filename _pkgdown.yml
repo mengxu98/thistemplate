@@ -6,13 +6,20 @@ toc:
 url: https://mengxu98.github.io/mxtemplate/
 
 template:
+  bootstrap: 5
+  light-switch: true
   package: mxtemplate
 
-navbar:
+  bslib:
+    heading_font: {google: "Outfit"}
+    code_font: {google: "IBM Plex Mono"}
+    base_font: |
+      -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif
 
+navbar:
   structure:
     left:  [articles, reference, tutorials, news]
-    right: [github, mengxu]
+    right: [github, mengxu, lightswitch]
 
   components:
     github:
@@ -33,4 +40,8 @@ navbar:
 reference:
 - title: Testing
   contents:
-  - '`test`'
+  - test
+
+- title: Use mxtemplate
+  contents:
+  - use_mxtemplate
