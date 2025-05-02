@@ -16,7 +16,9 @@ RoxygenNote: 7.3.2
 Suggests: 
     bslib,
     knitr,
-    thematic
+    thematic,
+    desc,
+    yaml
 VignetteBuilder: 
     knitr
 Config/Needs/website: mengxu98/mxtemplate
