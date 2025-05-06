@@ -41,7 +41,7 @@ body {
 
 // Ensure contents never become unreadably wide
 .row > main {
-  max-width: 40rem;
+  max-width: 45rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -392,7 +392,7 @@ a.footnote-ref {
 /* bibliography styling ----------------------------------------------------- */
 // Added in pandoc 2.11: https://github.com/jgm/pandoc-templates/commit/9904bf71
 
-div.csl-bib-body { }
+// div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
