@@ -38,10 +38,6 @@ navbar:
       href: reference/index.html
 
 reference:
-- title: Testing
-  contents:
-  - test
-
 - title: Use mxtemplate
   contents:
   - use_mxtemplate
