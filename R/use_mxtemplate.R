@@ -62,9 +62,9 @@ use_mxtemplate <- function(
   if (!file.exists(pkgdown_path)) {
     yaml_content <- list(
       template = list(
-        package = "mxtemplate",
         bootstrap = 5,
-        `light-switch` = TRUE
+        `light-switch` = TRUE,
+        package = "mxtemplate"
       )
     )
 
@@ -86,26 +86,19 @@ use_mxtemplate <- function(
   } else {
     yaml_content <- yaml::read_yaml(pkgdown_path)
 
-    yaml_content$template <- list(
-      package = "mxtemplate",
-      bootstrap = 5,
-      `light-switch` = TRUE
-    )
+    if (is.null(yaml_content$template)) yaml_content$template <- list()
+    if (is.null(yaml_content$template$package)) yaml_content$template$package <- "mxtemplate"
+    if (is.null(yaml_content$template$`light-switch`)) yaml_content$template$`light-switch` <- TRUE
+    if (is.null(yaml_content$template$bootstrap)) yaml_content$template$bootstrap <- 5
 
-    if (is.null(yaml_content$navbar)) {
-      yaml_content$navbar <- list()
+    if (!is.null(yaml_content$navbar) && !is.null(yaml_content$navbar$structure)) {
+      right <- yaml_content$navbar$structure$right
+      if (is.null(right)) right <- character()
+      if (!"lightswitch" %in% right) {
+        yaml_content$navbar$structure$right <- c(right, "lightswitch")
+      }
     }
 
-    if (is.null(yaml_content$navbar$structure)) {
-      yaml_content$navbar$structure <- list(
-        left = c("articles", "reference", "tutorials", "news"),
-        right = c("github", author, "lightswitch")
-      )
-    }
-
-    if (is.null(yaml_content$navbar$components)) {
-      yaml_content$navbar$components <- list()
-    }
     yaml_content$navbar$components$github <- list(
       icon = "fab fa-github fa-lg",
       href = github_url

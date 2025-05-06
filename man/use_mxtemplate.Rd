@@ -4,10 +4,12 @@
 \alias{use_mxtemplate}
 \title{Use mxtemplate theme for pkgdown}
 \usage{
-use_mxtemplate(github_url = NULL)
+use_mxtemplate(github_url = NULL, author = NULL)
 }
 \arguments{
 \item{github_url}{Optional. The GitHub URL of your package. If provided, will be added to the navbar.}
+
+\item{author}{Optional. The author name. If not provided, will be extracted from DESCRIPTION.}
 }
 \description{
 This function helps you set up the mxtemplate theme for your package's pkgdown site.
