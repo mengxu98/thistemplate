@@ -29,8 +29,13 @@ body {
     color: black !important;
 }
 
+// .template-home img.logo {
+//     width: 90px !important;
+// }
 .template-home img.logo {
-    width: 90px !important;
+  width: 110px !important;
+  margin-right: -15px; // right margin
+  float: right;
 }
 
 .template-home .page-header {
