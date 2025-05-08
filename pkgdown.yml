@@ -3,7 +3,7 @@ pkgdown: 2.1.2
 pkgdown_sha: ~
 articles:
   test: test.html
-last_built: 2025-05-06T11:49Z
+last_built: 2025-05-08T03:17Z
 urls:
   reference: https://mengxu98.github.io/mxtemplate/reference
   article: https://mengxu98.github.io/mxtemplate/articles
