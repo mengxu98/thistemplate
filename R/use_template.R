@@ -1,14 +1,14 @@
-#' Use mxtemplate theme for pkgdown
+#' Use thistemplate theme for pkgdown
 #'
-#' This function helps you set up the mxtemplate theme for your package's pkgdown site.
+#' This function helps you set up the thistemplate theme for your package's pkgdown site.
 #' It will:
 #' 1. Create or update _pkgdown.yml with the necessary template configuration
-#' 2. Add mxtemplate to the Config/Needs/website field in DESCRIPTION
+#' 2. Add thistemplate to the Config/Needs/website field in DESCRIPTION
 #'
 #' @param github_url Optional. The GitHub URL of your package. If provided, will be added to the navbar.
 #' @param author Optional. The author name. If not provided, will be extracted from DESCRIPTION.
 #' @export
-use_mxtemplate <- function(
+use_thistemplate <- function(
     github_url = NULL,
     author = NULL) {
   root_pkgdown <- "_pkgdown.yml"
@@ -64,7 +64,7 @@ use_mxtemplate <- function(
       template = list(
         bootstrap = 5,
         `light-switch` = TRUE,
-        package = "mxtemplate"
+        package = "thistemplate"
       )
     )
 
@@ -82,12 +82,12 @@ use_mxtemplate <- function(
     )
 
     yaml::write_yaml(yaml_content, pkgdown_path)
-    message("Created _pkgdown.yml with mxtemplate configuration")
+    message("Created _pkgdown.yml with thistemplate configuration")
   } else {
     yaml_content <- yaml::read_yaml(pkgdown_path)
 
     if (is.null(yaml_content$template)) yaml_content$template <- list()
-    if (is.null(yaml_content$template$package)) yaml_content$template$package <- "mxtemplate"
+    if (is.null(yaml_content$template$package)) yaml_content$template$package <- "thistemplate"
     if (is.null(yaml_content$template$`light-switch`)) yaml_content$template$`light-switch` <- TRUE
     if (is.null(yaml_content$template$bootstrap)) yaml_content$template$bootstrap <- 5
 
@@ -105,7 +105,7 @@ use_mxtemplate <- function(
     )
 
     yaml::write_yaml(yaml_content, pkgdown_path)
-    message(sprintf("Updated %s with mxtemplate configuration", pkgdown_path))
+    message(sprintf("Updated %s with thistemplate configuration", pkgdown_path))
   }
 
   desc_path <- "DESCRIPTION"
@@ -114,9 +114,9 @@ use_mxtemplate <- function(
   }
 
   desc <- desc::description$new(desc_path)
-  desc$set("Config/Needs/website", "mengxu98/mxtemplate")
+  desc$set("Config/Needs/website", "mengxu98/thistemplate")
   desc$write()
-  message("Updated DESCRIPTION with mxtemplate dependency")
+  message("Updated DESCRIPTION with thistemplate dependency")
 
   invisible(TRUE)
 }
