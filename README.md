@@ -1,9 +1,9 @@
 
-# ***mxtemplate***
+# ***thistemplate***
 
 <!-- badges: start -->
 
-[![pkgdown](https://github.com/mengxu98/mxtemplate/actions/workflows/pkgdown.yaml/badge.svg)](https://mengxu98.github.io/mxtemplate/index.html)
+[![pkgdown](https://github.com/mengxu98/thistemplate/actions/workflows/pkgdown.yaml/badge.svg)](https://mengxu98.github.io/thistemplate/index.html)
 
 <!-- badges: end -->
 
@@ -17,7 +17,7 @@ A theme and template for
 
 ``` yaml
 template:
-  package: mxtemplate
+  package: thistemplate
 
 navbar:
   components:
@@ -29,12 +29,12 @@ navbar:
 #### *DESCRIPTION*
 
 ``` yaml
-Config/Needs/website: mengxu98/mxtemplate
+Config/Needs/website: mengxu98/thistemplate
 ```
 
 ## Acknowledge
 
-The [*`mxtemplate`*](https://github.com/mengxu98/mxtemplate) package
+The [*`thistemplate`*](https://github.com/mengxu98/thistemplate) package
 referred [*`bslib`*](https://github.com/rstudio/bslib/tree/main)
 package, [*`gadenbuie`*](https://github.com/gadenbuie)’s
 [*`grkgdown`*](https://github.com/gadenbuie/grkgdown) package and

@@ -3,12 +3,12 @@ destination: docs
 toc:
   depth: 3
 
-url: https://mengxu98.github.io/mxtemplate/
+url: https://mengxu98.github.io/thistemplate/
 
 template:
   bootstrap: 5
   light-switch: true
-  package: mxtemplate
+  package: thistemplate
 
 navbar:
   structure:
@@ -18,7 +18,7 @@ navbar:
   components:
     github:
       icon: fab fa-github fa-lg
-      href: https://github.com/mengxu98/mxtemplate
+      href: https://github.com/mengxu98/thistemplate
       aria-label: GitHub repository
 
     mengxu:
@@ -32,6 +32,6 @@ navbar:
       href: reference/index.html
 
 reference:
-- title: Use mxtemplate
+- title: Use thistemplate
   contents:
-  - use_mxtemplate
+  - use_thistemplate
