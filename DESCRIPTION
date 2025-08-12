@@ -2,9 +2,8 @@ Package: thistemplate
 Title: Custom 'pkgdown' Template for github.io
 Version: 0.0.1
 Date: 2024-4-11
-Authors@R: 
-    person("Meng", "Xu", , "mengxu98@qq.com", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-8300-1054"))
+Authors@R:
+    person("Meng", "Xu", , "mengxu98@qq.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8300-1054"))
 Description: My personal pkgdown docs style.
 License: MIT + file LICENSE
 URL: https://github.com/mengxu98/thistemplate,
