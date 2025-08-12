@@ -58,40 +58,59 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="thistemplate">
-<strong><em>thistemplate</em></strong><a class="anchor" aria-label="anchor" href="#thistemplate"></a>
+<div class="page-header"><h1 id="thistemplate">thistemplate<a class="anchor" aria-label="anchor" href="#thistemplate"></a>
 </h1></div>
 <!-- badges: start -->
 
 <!-- badges: end -->
-<p>A theme and template for <a href="https://github.com/r-lib/pkgdown/" class="external-link"><em><code>pkgdown</code></em></a> page. Such as: <a href="https://mengxu98.github.io/inferCSN/" class="external-link"><em><code>inferCSN</code></em></a>.</p>
+<p>A theme and template for <a href="https://github.com/r-lib/pkgdown/" class="external-link">pkgdown</a> page. Such as: <a href="https://mengxu98.github.io/inferCSN/" class="external-link">inferCSN</a>.</p>
 <div class="section level2">
 <h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h2>
+<div class="section level3">
+<h3 id="two-way">Two way<a class="anchor" aria-label="anchor" href="#two-way"></a>
+</h3>
+</div>
+<div class="section level3">
+<h3 id="id_1-automatic-setting">1. Automatic setting<a class="anchor" aria-label="anchor" href="#id_1-automatic-setting"></a>
+</h3>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw">if</span> <span class="op">(</span><span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">require</a></span><span class="op">(</span><span class="st"><a href="https://pak.r-lib.org/" class="external-link">"pak"</a></span>, quietly <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span>
+<span><span class="op">}</span></span>
+<span><span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"mengxu98/thistemplate"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/mengxu98/thistemplate" class="external-link">thistemplate</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/use_thistemplate.html">use_thistemplate</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div class="section level3">
+<h3 id="id_2-manual-setting">2. Manual setting<a class="anchor" aria-label="anchor" href="#id_2-manual-setting"></a>
+</h3>
 <div class="section level4">
-<h4 id="id__pkgdownyml">
-<em>_pkgdown.yml</em><a class="anchor" aria-label="anchor" href="#id__pkgdownyml"></a>
+<h4 id="id__pkgdownyml-file">
+<code>_pkgdown.yml</code> file<a class="anchor" aria-label="anchor" href="#id__pkgdownyml-file"></a>
 </h4>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">template</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> thistemplate</span></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="fu">navbar</span><span class="kw">:</span></span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="at">  </span><span class="fu">components</span><span class="kw">:</span></span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="at">    </span><span class="fu">github</span><span class="kw">:</span></span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="at">      </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> fab fa-github fa-lg</span></span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> The link of package</span><span class="co"> # Such as: https://github.com/mengxu98/inferCSN</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">template</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="at">  </span><span class="fu">package</span><span class="kw">:</span><span class="at"> thistemplate</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="fu">navbar</span><span class="kw">:</span></span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="at">  </span><span class="fu">components</span><span class="kw">:</span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a><span class="at">    </span><span class="fu">github</span><span class="kw">:</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="at">      </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> fab fa-github fa-lg</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="at">      </span><span class="fu">href</span><span class="kw">:</span><span class="at"> The link of package</span><span class="co"> # eg.: https://github.com/usrname/package</span></span></code></pre></div>
 </div>
 <div class="section level4">
-<h4 id="description">
-<em>DESCRIPTION</em><a class="anchor" aria-label="anchor" href="#description"></a>
+<h4 id="description-file">
+<code>DESCRIPTION</code> file<a class="anchor" aria-label="anchor" href="#description-file"></a>
 </h4>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">Config/Needs/website</span><span class="kw">:</span><span class="at"> mengxu98/thistemplate</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">Config/Needs/website</span><span class="kw">:</span><span class="at"> mengxu98/thistemplate</span></span></code></pre></div>
+</div>
 </div>
 </div>
 <div class="section level2">
 <h2 id="acknowledge">Acknowledge<a class="anchor" aria-label="anchor" href="#acknowledge"></a>
 </h2>
-<p>The <a href="https://github.com/mengxu98/thistemplate" class="external-link"><em><code>thistemplate</code></em></a> package referred <a href="https://github.com/rstudio/bslib/tree/main" class="external-link"><em><code>bslib</code></em></a> package, <a href="https://github.com/gadenbuie" class="external-link"><em><code>gadenbuie</code></em></a>’s <a href="https://github.com/gadenbuie/grkgdown" class="external-link"><em><code>grkgdown</code></em></a> package and <a href="https://github.com/mlr-org/mlr3pkgdowntemplate" class="external-link"><em><code>mlr3pkgdowntemplate</code></em></a> package.</p>
+<p>The <a href="https://github.com/mengxu98/thistemplate" class="external-link">thistemplate</a> package referred <a href="https://github.com/rstudio/bslib/tree/main" class="external-link">bslib</a> package, <a href="https://github.com/gadenbuie" class="external-link">gadenbuie</a>’s <a href="https://github.com/gadenbuie/grkgdown" class="external-link">grkgdown</a> package and <a href="https://github.com/mlr-org/mlr3pkgdowntemplate" class="external-link">mlr3pkgdowntemplate</a> package.</p>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
