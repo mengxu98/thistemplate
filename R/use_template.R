@@ -1,16 +1,15 @@
-#' Use thistemplate theme for pkgdown
+#' @title Use thistemplate theme for pkgdown
 #'
-#' This function helps you set up the thistemplate theme for your package's pkgdown site.
+#' @description
+#' This function automatically sets up the `thistemplate` theme for your package's pkgdown site.
 #' It will:
-#' 1. Create or update _pkgdown.yml with the necessary template configuration
-#' 2. Add thistemplate to the Config/Needs/website field in DESCRIPTION
+#' 1. Create or update `_pkgdown.yml` with the necessary template configuration
+#' 2. Add `thistemplate` to the `Config/Needs/website` field in DESCRIPTION
+#' 3. Automatically extract author and GitHub URL from `DESCRIPTION` file
 #'
-#' @param github_url Optional. The GitHub URL of your package. If provided, will be added to the navbar.
-#' @param author Optional. The author name. If not provided, will be extracted from DESCRIPTION.
+#' @md
 #' @export
-use_thistemplate <- function(
-    github_url = NULL,
-    author = NULL) {
+use_thistemplate <- function() {
   root_pkgdown <- "_pkgdown.yml"
   if (file.exists(root_pkgdown)) {
     pkgdown_path <- root_pkgdown
@@ -30,33 +29,28 @@ use_thistemplate <- function(
         pkgdown_path <- inst_pkgdown[1]
       } else {
         pkgdown_path <- pkgdown_files[1]
-        warning(
-          sprintf(
-            "No _pkgdown.yml found in root or inst/pkgdown. Using %s instead.",
-            pkgdown_path
-          )
+        cli::cli_alert_warning(
+          "No {.file _pkgdown.yml} found in {.path root} or {.path inst/pkgdown}"
         )
       }
     }
   }
 
-  if (is.null(author)) {
-    author_info <- desc::desc_get_author()
-    author <- gsub("^([^<]+).*$", "\\1", author_info)
-    author <- trimws(author)
-  }
+  author_info <- desc::desc_get_author()
+  author <- gsub("^([^<]+).*$", "\\1", author_info)
+  author <- trimws(author)
 
-  if (is.null(github_url)) {
-    github_url <- desc::desc_get_urls()
+  github_url <- desc::desc_get_urls()
+  if (length(github_url) > 0) {
+    github_url <- github_url[grepl("github", github_url)]
     if (length(github_url) > 0) {
-      github_url <- github_url[grepl("github", github_url)]
-      if (length(github_url) > 0) {
-        github_url <- github_url[1]
-      }
-    } else {
-      warning("No GitHub URL found in DESCRIPTION")
-      github_url <- NULL
+      github_url <- github_url[1]
     }
+  } else {
+    cli::cli_alert_warning(
+      "No GitHub URL found in {.file DESCRIPTION}"
+    )
+    github_url <- NULL
   }
 
   if (!file.exists(pkgdown_path)) {
@@ -76,24 +70,37 @@ use_thistemplate <- function(
       components = list(
         github = list(
           icon = "fab fa-github fa-lg",
-          href = github_url
+          href = github_url,
+          "aria-label" = "GitHub"
         )
       )
     )
 
     yaml::write_yaml(yaml_content, pkgdown_path)
-    message("Created _pkgdown.yml with thistemplate configuration")
+    cli::cli_alert_success(
+      "Created {.file _pkgdown.yml} with {.pkg thistemplate} configuration"
+    )
   } else {
     yaml_content <- yaml::read_yaml(pkgdown_path)
 
-    if (is.null(yaml_content$template)) yaml_content$template <- list()
-    if (is.null(yaml_content$template$package)) yaml_content$template$package <- "thistemplate"
-    if (is.null(yaml_content$template$`light-switch`)) yaml_content$template$`light-switch` <- TRUE
-    if (is.null(yaml_content$template$bootstrap)) yaml_content$template$bootstrap <- 5
+    if (is.null(yaml_content$template)) {
+      yaml_content$template <- list()
+    }
+    if (is.null(yaml_content$template$package)) {
+      yaml_content$template$package <- "thistemplate"
+    }
+    if (is.null(yaml_content$template$`light-switch`)) {
+      yaml_content$template$`light-switch` <- TRUE
+    }
+    if (is.null(yaml_content$template$bootstrap)) {
+      yaml_content$template$bootstrap <- 5
+    }
 
     if (!is.null(yaml_content$navbar) && !is.null(yaml_content$navbar$structure)) {
       right <- yaml_content$navbar$structure$right
-      if (is.null(right)) right <- character()
+      if (is.null(right)) {
+        right <- character()
+      }
       if (!"lightswitch" %in% right) {
         yaml_content$navbar$structure$right <- c(right, "lightswitch")
       }
@@ -101,22 +108,22 @@ use_thistemplate <- function(
 
     yaml_content$navbar$components$github <- list(
       icon = "fab fa-github fa-lg",
-      href = github_url
+      href = github_url,
+      "aria-label" = "GitHub"
     )
 
     yaml::write_yaml(yaml_content, pkgdown_path)
-    message(sprintf("Updated %s with thistemplate configuration", pkgdown_path))
+    cli::cli_alert_success(
+      "Updated {.file {pkgdown_path}} with {.pkg thistemplate} configuration"
+    )
   }
 
-  desc_path <- "DESCRIPTION"
-  if (!file.exists(desc_path)) {
-    stop("DESCRIPTION file not found")
-  }
-
-  desc <- desc::description$new(desc_path)
+  desc <- desc::description$new("DESCRIPTION")
   desc$set("Config/Needs/website", "mengxu98/thistemplate")
   desc$write()
-  message("Updated DESCRIPTION with thistemplate dependency")
+  cli::cli_alert_success(
+    "Updated {.file DESCRIPTION} with {.pkg thistemplate} dependency"
+  )
 
   invisible(TRUE)
 }

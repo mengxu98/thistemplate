@@ -1,23 +1,19 @@
 Package: thistemplate
-Title: Custom 'pkgdown' Template for github.io
-Version: 0.0.1
-Date: 2024-4-11
+Title: Template for pkgdown
+Version: 0.0.2
+Date: 2025-10-06
 Authors@R:
     person("Meng", "Xu", , "mengxu98@qq.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0002-8300-1054"))
-Description: My personal pkgdown docs style.
+Description: This package provides a template for pkgdown.
 License: MIT + file LICENSE
 URL: https://github.com/mengxu98/thistemplate,
     https://mengxu98.github.io/thistemplate
 BugReports: https://github.com/mengxu98/thistemplate/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-Suggests: 
-    bslib,
-    knitr,
-    thematic,
+RoxygenNote: 7.3.3
+Suggests:
+    cli,
     desc,
     yaml
-VignetteBuilder: 
-    knitr
 Config/Needs/website: mengxu98/thistemplate

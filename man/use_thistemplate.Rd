@@ -4,18 +4,14 @@
 \alias{use_thistemplate}
 \title{Use thistemplate theme for pkgdown}
 \usage{
-use_thistemplate(github_url = NULL, author = NULL)
-}
-\arguments{
-\item{github_url}{Optional. The GitHub URL of your package. If provided, will be added to the navbar.}
-
-\item{author}{Optional. The author name. If not provided, will be extracted from DESCRIPTION.}
+use_thistemplate()
 }
 \description{
-This function helps you set up the thistemplate theme for your package's pkgdown site.
+This function automatically sets up the \code{thistemplate} theme for your package's pkgdown site.
 It will:
 \enumerate{
-\item Create or update _pkgdown.yml with the necessary template configuration
-\item Add thistemplate to the Config/Needs/website field in DESCRIPTION
+\item Create or update \verb{_pkgdown.yml} with the necessary template configuration
+\item Add \code{thistemplate} to the \code{Config/Needs/website} field in DESCRIPTION
+\item Automatically extract author and GitHub URL from \code{DESCRIPTION} file
 }
 }

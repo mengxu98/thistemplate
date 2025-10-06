@@ -1,5 +1,4 @@
-
-# thistemplate
+# ***thistemplate***
 
 <!-- badges: start -->
 
@@ -8,8 +7,8 @@
 <!-- badges: end -->
 
 A theme and template for
-[pkgdown](https://github.com/r-lib/pkgdown/) page. Such as:
-[inferCSN](https://mengxu98.github.io/inferCSN/).
+[pkgdown](https://github.com/r-lib/pkgdown/) page. See
+[thistemplate](https://mengxu98.github.io/thistemplate/).
 
 ## Usage
 

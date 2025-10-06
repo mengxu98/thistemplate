@@ -1,37 +1,35 @@
 destination: docs
-
 toc:
   depth: 3
-
 url: https://mengxu98.github.io/thistemplate/
-
 template:
   bootstrap: 5
-  light-switch: true
+  light-switch: yes
   package: thistemplate
-
 navbar:
   structure:
-    left:  [articles, reference, tutorials, news]
-    right: [github, mengxu, lightswitch]
-
+    left:
+    - articles
+    - reference
+    - tutorials
+    - news
+    right:
+    - github
+    - mengxu
+    - lightswitch
   components:
     github:
       icon: fab fa-github fa-lg
       href: https://github.com/mengxu98/thistemplate
-      aria-label: GitHub repository
-
+      aria-label: GitHub
     mengxu:
       icon: fas fa-home fa-lg
       href: https://github.com/mengxu98
       title: MengXu
       aria-label: MengXu's GitHub profile
-
     reference:
       text: Reference
       href: reference/index.html
-
 reference:
 - title: Use thistemplate
-  contents:
-  - use_thistemplate
+  contents: use_thistemplate
