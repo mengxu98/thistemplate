@@ -52,12 +52,12 @@ body {
 }
 // Put extra space between content and navbar
 @include media-breakpoint-only(xl) {
-  .container .row { justify-content: space-evenly; }
+  .container .row { justify-content: flex-start; }
 }
 // Boost font size and give big (but not infinite) margin on sidebar
 @include media-breakpoint-up(xxl) {
   body { font-size: 18px }
-  .col-md-3 { margin-left: 5rem; }
+  .col-md-3 { margin-left: 0rem; }
 }
 
 /* navbar =================================================================== */
