@@ -1,32 +1,32 @@
 /* custom changes =========================================================== */
 
 a {
-    text-decoration: none !important;
-    color: #03638e;
+  text-decoration: none !important;
+  color: #03638e;
 }
 
 .text-default {
-    --bs-text-opacity: 1;
-    color: #03638e !important;
+  --bs-text-opacity: 1;
+  color: #03638e !important;
 }
 
 .navbar-dark {
-    background-color: #fff !important;
-    border-bottom: 1px solid #dee2e6 !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #dee2e6 !important;
 }
 
 .bg-light {
-    background-color: #fff !important;
-    border-bottom: 1px solid #dee2e6 !important;
+  background-color: #fff !important;
+  border-bottom: 1px solid #dee2e6 !important;
 }
 
 body {
-    font-size: 0.85rem !important;
-    // font-family: "Segoe UI", "Helvetica Neue";
+  font-size: 0.85rem !important;
+  // font-family: "Segoe UI", "Helvetica Neue";
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: black !important;
+  color: black !important;
 }
 
 // .template-home img.logo {
@@ -34,12 +34,12 @@ body {
 // }
 .template-home img.logo {
   width: 110px !important;
-  margin-right: -15px; // right margin
+  margin-right: -20px; // right margin - negative to extend beyond boundary
   float: right;
 }
 
 .template-home .page-header {
-    min-height: 75px !important;
+  min-height: 75px !important;
 }
 
 /* control page width ====================================================== */
@@ -52,12 +52,18 @@ body {
 }
 // Put extra space between content and navbar
 @include media-breakpoint-only(xl) {
-  .container .row { justify-content: flex-start; }
+  .container .row {
+    justify-content: flex-start;
+  }
 }
 // Boost font size and give big (but not infinite) margin on sidebar
 @include media-breakpoint-up(xxl) {
-  body { font-size: 18px }
-  .col-md-3 { margin-left: 0rem; }
+  body {
+    font-size: 18px;
+  }
+  .col-md-3 {
+    margin-left: 0rem;
+  }
 }
 
 /* navbar =================================================================== */
@@ -71,17 +77,19 @@ body {
 
 .navbar-light .navbar-nav .active > .nav-link {
   background: $gray-200;
-  color:      $body-color;
+  color: $body-color;
 }
 .navbar-dark .navbar-nav .active > .nav-link {
   background: $gray-800;
-  color:      $body-bg;
+  color: $body-bg;
 }
 
 .navbar-dark .navbar-nav .nav-item > .nav-link:hover,
 .navbar-light .navbar-nav .nav-item > .nav-link:hover {
   background: change-color($primary, $alpha: 0.1);
 }
+
+/* search input style */
 
 .navbar-dark {
   input[type="search"] {
@@ -93,7 +101,8 @@ body {
 
 input[type="search"] {
   border-color: $border-color;
-  width: 12rem;
+  width: 10rem;
+  height: 2rem;
 }
 
 /* headroom.js -------------------------------------------------------------- */
@@ -102,18 +111,24 @@ input[type="search"] {
   will-change: transform;
   transition: transform 400ms ease;
 }
-.headroom--pinned   { transform: translateY(0%); }
-.headroom--unpinned { transform: translateY(-100%); }
+.headroom--pinned {
+  transform: translateY(0%);
+}
+.headroom--unpinned {
+  transform: translateY(-100%);
+}
 
 // Need to adjust body components down by height of navbar so it
 // doesn't overlap them when visible
 $pkgdown-nav-height: 56px !default;
 
-.row > main, .row > aside {
+.row > main,
+.row > aside {
   margin-top: $pkgdown-nav-height;
 }
-html, body {
-  scroll-padding: $pkgdown-nav-height
+html,
+body {
+  scroll-padding: $pkgdown-nav-height;
 }
 
 // Make scrollable, sticky TOC
@@ -137,8 +152,12 @@ aside {
     color: mix($body-color, $body-bg, 80%);
   }
 
-  .list-unstyled li { margin-bottom: 0.5rem; }
-  .dev-status .list-unstyled li { margin-bottom: 0.1rem; }
+  .list-unstyled li {
+    margin-bottom: 0.5rem;
+  }
+  .dev-status .list-unstyled li {
+    margin-bottom: 0.1rem;
+  }
 }
 
 // Add some visual distinction between content and "sidebar" on mobile
@@ -165,7 +184,9 @@ $pkgdown-toc-hover-bg: change-color($primary, $alpha: 0.1) !default;
 $pkgdown-toc-hover-color: color-contrast($pkgdown-toc-active-bg) !default;
 
 // needed for scrollspy
-body {position: relative;}
+body {
+  position: relative;
+}
 
 #toc > .nav {
   margin-bottom: 1rem;
@@ -177,7 +198,8 @@ body {position: relative;}
     @include border-radius($border-radius);
     border: $pkgdown-toc-border-width solid $pkgdown-toc-border-color;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: $pkgdown-toc-hover-bg;
       color: $pkgdown-toc-hover-color;
     }
@@ -188,12 +210,18 @@ body {position: relative;}
   }
 
   // Nested headings are indented
-  .nav a.nav-link { margin-left: 0.5rem; }
+  .nav a.nav-link {
+    margin-left: 0.5rem;
+  }
 
   // Only show second level if active.
   // Requires !important because that's how BS5 sets display: flex
-  .nav { display: none !important; }
-  a.active + .nav { display: flex !important; }
+  .nav {
+    display: none !important;
+  }
+  a.active + .nav {
+    display: flex !important;
+  }
 }
 
 /* footer  ================================================================== */
@@ -205,7 +233,7 @@ $pkgdown-footer-border-width: $border-width !default;
 
 footer {
   margin: 1rem 0 1rem 0;
-  font-size: .875em;
+  font-size: 0.875em;
   border-top: $pkgdown-footer-border-width solid $pkgdown-footer-border-color;
   background: $pkgdown-footer-bg;
   color: $pkgdown-footer-color;
@@ -214,10 +242,14 @@ footer {
 }
 
 @include media-breakpoint-down(sm) {
-  footer {flex-direction: column;}
+  footer {
+    flex-direction: column;
+  }
 }
 @include media-breakpoint-up(sm) {
-  footer .pkgdown-footer-right { text-align: right;}
+  footer .pkgdown-footer-right {
+    text-align: right;
+  }
 }
 
 footer div {
@@ -231,7 +263,8 @@ footer div {
 // Details: https://github.com/philipwalton/solved-by-flexbox/blob/master/assets/css/components/site.css
 
 // Need .container and __all parents__ have height set to 100%
-html, body {
+html,
+body {
   height: 100%;
 }
 body > .container {
@@ -299,13 +332,19 @@ a.anchor {
   background-size: Min(0.9em, 20px) Min(0.9em, 20px);
   background-position: center center;
 }
-h2, h3, h4, h5, h6 {
-  &:hover .anchor {display: inline-block;}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  &:hover .anchor {
+    display: inline-block;
+  }
 }
 
 // orcid badge
 .orcid {
-  color: #A6CE39;
+  color: #a6ce39;
   margin-right: 4px;
 }
 // activate font awesome
@@ -318,19 +357,26 @@ img.logo {
   float: right;
   width: 100px;
   margin-left: 30px;
+  margin-right: -20px;
 }
 .template-home img.logo {
   width: 120px;
 }
 
 @include media-breakpoint-down(sm) {
-  img.logo {width: 80px;}
+  img.logo {
+    width: 80px;
+  }
 }
 // line up h1 border-bottom with corner of hexagon
 // values determined empirically
 @include media-breakpoint-up(sm) {
-  .page-header {min-height: 88px}
-  .template-home .page-header {min-height: 104px}
+  .page-header {
+    min-height: 88px;
+  }
+  .template-home .page-header {
+    min-height: 104px;
+  }
 }
 
 // line-block produced by pandoc needs margin-bottom since it doesn't
@@ -342,13 +388,19 @@ img.logo {
 // Override bootstrap defaults that make sense in page bodies, but not on
 // the reference index
 .template-reference-index {
-  dt {font-weight: normal;}
+  dt {
+    font-weight: normal;
+  }
   // Don't allow breaking within a function name
-  code {word-wrap: normal;}
+  code {
+    word-wrap: normal;
+  }
 }
 .icon {
   float: right;
-  img {width: 40px;}
+  img {
+    width: 40px;
+  }
 }
 
 /* Footnotes ---------------------------------------------------------------- */
@@ -402,16 +454,16 @@ div.csl-entry {
   clear: both;
 }
 .hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
+  margin-left: 2em;
+  text-indent: -2em;
 }
 div.csl-left-margin {
-  min-width:2em;
-  float:left;
+  min-width: 2em;
+  float: left;
 }
 div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
+  margin-left: 2em;
+  padding-left: 1em;
 }
 div.csl-indent {
   margin-left: 2em;
@@ -419,7 +471,8 @@ div.csl-indent {
 
 /* code ===================================================================== */
 
-pre, pre code {
+pre,
+pre code {
   white-space: pre-wrap;
   word-break: break-all;
   overflow-wrap: break-word;
@@ -448,14 +501,14 @@ pre {
   // div.section div.sourceCode pre
   // prevents matching <pre> inside (e.g.) a <li>
   div > div > pre {
-    margin-left: calc(var(--bs-gutter-x) * -.5);
-    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -0.5);
+    margin-right: calc(var(--bs-gutter-x) * -0.5);
     border-radius: 0;
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .btn-copy-ex {
-    right: calc(var(--bs-gutter-x) * -.5 + 5px);
+    right: calc(var(--bs-gutter-x) * -0.5 + 5px);
   }
 }
 
@@ -467,21 +520,25 @@ pre code {
     color: inherit;
     text-decoration-color: $gray-600;
   }
-  .error, .warning {font-weight: bolder;}
+  .error,
+  .warning {
+    font-weight: bolder;
+  }
 }
 
-pre .img, pre .r-plt {
+pre .img,
+pre .r-plt {
   img {
     margin: 5px 0;
     background-color: #fff;
   }
 }
 
-
 /* don't display links in code chunks when printing */
 /* source: https://stackoverflow.com/a/10781533 */
 @media print {
-  code a:link:after, code a:visited:after {
+  code a:link:after,
+  code a:visited:after {
     content: "";
   }
 }
@@ -493,11 +550,12 @@ a.sourceLine:hover {
 /* search =================================================================== */
 
 mark {
-  background: linear-gradient(-100deg,
+  background: linear-gradient(
+    -100deg,
     change-color($info, $alpha: 0.2),
     change-color($info, $alpha: 0.7) 95%,
     change-color($info, $alpha: 0.1)
-  )
+  );
 }
 
 .algolia-autocomplete .aa-hint {
