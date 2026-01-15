@@ -46,7 +46,7 @@ body {
 
 // Ensure contents never become unreadably wide
 .row > main {
-  max-width: 50rem;
+  max-width: 50rem; // width of the main content area
   margin-left: auto;
   margin-right: auto;
 }
@@ -284,7 +284,8 @@ body > .container .row {
 
 // Ensure in-page images don't run outside their container
 main img {
-  max-width: 100%;
+  max-width: none;
+  width: 100%;
   height: auto;
 }
 main table {
@@ -529,7 +530,7 @@ pre code {
 pre .img,
 pre .r-plt {
   img {
-    margin: 5px 0;
+    margin: 3px 0;
     background-color: #fff;
   }
 }
