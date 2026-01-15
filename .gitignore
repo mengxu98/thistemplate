@@ -11,4 +11,5 @@
 # RStudio files
 .Rproj.user/
 
+pkgdown/
 docs
