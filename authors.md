@@ -10,13 +10,13 @@
 Source:
 [`DESCRIPTION`](https://github.com/mengxu98/thistemplate/blob/main/DESCRIPTION)
 
-Xu M (2025). *thistemplate: Template for pkgdown*. R package version
-0.0.6, <https://github.com/mengxu98/thistemplate>.
+Xu M (2026). *thistemplate: Template for pkgdown*. R package version
+0.0.7, <https://github.com/mengxu98/thistemplate>.
 
     @Manual{,
       title = {thistemplate: Template for pkgdown},
       author = {Meng Xu},
-      year = {2025},
-      note = {R package version 0.0.6},
+      year = {2026},
+      note = {R package version 0.0.7},
       url = {https://github.com/mengxu98/thistemplate},
     }
