@@ -569,7 +569,7 @@ mark {
 }
 .search-details {
   font-size: 0.9rem;
-  color: $primary;
+  color: var(--bs-body-color);
   display: inline;
   font-weight: bolder;
 }
