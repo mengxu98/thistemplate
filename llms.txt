@@ -10,6 +10,7 @@ page. See [thistemplate](https://mengxu98.github.io/thistemplate/).
 ### 1. Automatic setting
 
 ``` r
+
 if (!require("pak", quietly = TRUE)) {
   install.packages("pak")
 }
