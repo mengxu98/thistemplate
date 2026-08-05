@@ -91,16 +91,8 @@ body {
 
 /* search input style */
 
-.navbar-dark {
-  input[type="search"] {
-    border-color: $gray-600;
-    background-color: $gray-900;
-    color: $gray-200;
-  }
-}
-
 input[type="search"] {
-  border-color: $border-color;
+  border-color: var(--bs-border-color);
   width: 10rem;
   height: 2rem;
 }
@@ -553,21 +545,21 @@ a.sourceLine:hover {
 mark {
   background: linear-gradient(
     -100deg,
-    change-color($info, $alpha: 0.2),
-    change-color($info, $alpha: 0.7) 95%,
-    change-color($info, $alpha: 0.1)
+    change-color($primary, $alpha: 0.2),
+    change-color($primary, $alpha: 0.7) 95%,
+    change-color($primary, $alpha: 0.1)
   );
 }
 
 .algolia-autocomplete .aa-hint {
-  color: $gray-900;
+  color: var(--bs-secondary-color);
 }
 
 /* "Max" needed until libsass supports https://sass-lang.com/documentation/syntax/special-functions#min-and-max */
 .algolia-autocomplete .aa-dropdown-menu {
   width: Max(100%, 20rem);
-  background-color: $body-bg;
-  border: $border-width solid $table-border-color;
+  background-color: var(--bs-body-bg);
+  border: $border-width solid var(--bs-border-color);
   margin-top: 2px;
 
   max-height: 50vh;
@@ -576,9 +568,9 @@ mark {
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
   cursor: pointer;
   padding: 5px 4px;
-  border-bottom: 1px $gray-200 solid;
+  border-bottom: 1px var(--bs-border-color) solid;
   font-size: 0.9rem;
-  color: $gray-900;
+  color: var(--bs-body-color);
 }
 .search-details {
   font-size: 0.9rem;
@@ -587,5 +579,5 @@ mark {
   font-weight: bolder;
 }
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-  background-color: mix($primary, $body-bg, 10%);
+  background-color: var(--bs-tertiary-bg);
 }
