@@ -576,3 +576,22 @@ mark {
 .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
   background-color: var(--bs-tertiary-bg);
 }
+
+/* light and dark images ==================================================== */
+
+/* GitHub-style #gh-light-mode-only / #gh-dark-mode-only image fragments, so one
+   README can carry a figure for each theme. GitHub handles the fragments itself;
+   here they are driven by the pkgdown light switch, which sets data-bs-theme on
+   <html>. */
+
+img[src$="#gh-dark-mode-only"] {
+  display: none;
+}
+
+[data-bs-theme="dark"] img[src$="#gh-dark-mode-only"] {
+  display: inline-block;
+}
+
+[data-bs-theme="dark"] img[src$="#gh-light-mode-only"] {
+  display: none;
+}
