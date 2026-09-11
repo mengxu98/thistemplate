@@ -1,13 +1,13 @@
-# ***thistemplate***
+# **thistemplate**
 
 A theme and template for [pkgdown](https://github.com/r-lib/pkgdown/)
 page. See [thistemplate](https://mengxu98.github.io/thistemplate/).
 
-## Usage
+## **Usage**
 
-### Two way
+### **Two way**
 
-### 1. Automatic setting
+### **1. Automatic setting**
 
 ``` r
 
@@ -20,9 +20,9 @@ library(thistemplate)
 use_thistemplate()
 ```
 
-### 2. Manual setting
+### **2. Manual setting**
 
-#### `_pkgdown.yml` file
+#### **`_pkgdown.yml` file**
 
 ``` yaml
 template:
@@ -35,13 +35,13 @@ navbar:
       href: The link of package # eg.: https://github.com/usrname/package
 ```
 
-#### `DESCRIPTION` file
+#### **`DESCRIPTION` file**
 
 ``` yaml
 Config/Needs/website: mengxu98/thistemplate
 ```
 
-## Acknowledge
+## **Acknowledge**
 
 The [thistemplate](https://github.com/mengxu98/thistemplate) package
 referred [bslib](https://github.com/rstudio/bslib/tree/main) package,
