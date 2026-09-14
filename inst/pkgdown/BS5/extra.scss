@@ -582,16 +582,17 @@ mark {
 /* GitHub-style #gh-light-mode-only / #gh-dark-mode-only image fragments, so one
    README can carry a figure for each theme. GitHub handles the fragments itself;
    here they are driven by the pkgdown light switch, which sets data-bs-theme on
-   <html>. */
+   <html>. The `!important` is required because README images routinely carry an
+   inline `display: block` style, which would otherwise win over these rules. */
 
 img[src$="#gh-dark-mode-only"] {
-  display: none;
+  display: none !important;
 }
 
 [data-bs-theme="dark"] img[src$="#gh-dark-mode-only"] {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 [data-bs-theme="dark"] img[src$="#gh-light-mode-only"] {
-  display: none;
+  display: none !important;
 }
