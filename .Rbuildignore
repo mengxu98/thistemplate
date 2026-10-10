@@ -4,7 +4,6 @@
 ^README\.Rmd$
 ^_pkgdown\.yml$
 ^\.github$
-^scripts$
 ^CRAN-SUBMISSION$
 ^cran-comments\.md$
 ^\.vscode$
