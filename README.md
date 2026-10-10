@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/mengxu98/thistemplate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mengxu98/thistemplate/actions/workflows/R-CMD-check.yaml) [![test-coverage](https://github.com/mengxu98/thistemplate/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/mengxu98/thistemplate/actions/workflows/test-coverage.yaml) [![pkgdown](https://github.com/mengxu98/thistemplate/actions/workflows/pkgdown.yaml/badge.svg)](https://mengxu98.github.io/thistemplate/index.html)
+[![R-CMD-check](https://github.com/mengxu98/thistemplate/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/mengxu98/thistemplate/actions/workflows/R-CMD-check.yaml) [![pkgdown](https://github.com/mengxu98/thistemplate/actions/workflows/pkgdown.yaml/badge.svg)](https://mengxu98.github.io/thistemplate/index.html)
 
 <!-- badges: end -->
 
