@@ -22,16 +22,12 @@ a {
 
 body {
   font-size: 0.85rem !important;
-  // font-family: "Segoe UI", "Helvetica Neue";
 }
 
 .navbar-light .navbar-nav .nav-link {
   color: black !important;
 }
 
-// .template-home img.logo {
-//     width: 90px !important;
-// }
 .template-home img.logo {
   width: 110px !important;
   margin-right: -20px; // right margin - negative to extend beyond boundary
@@ -56,11 +52,8 @@ body {
     justify-content: flex-start;
   }
 }
-// Boost font size and give big (but not infinite) margin on sidebar
+// Set sidebar margin on large screens
 @include media-breakpoint-up(xxl) {
-  body {
-    font-size: 18px;
-  }
   .col-md-3 {
     margin-left: 0rem;
   }
@@ -380,11 +373,6 @@ main table {
   overflow: auto;
 }
 
-// avoid flash of invisible text + flash of unstyled text
-body {
-  font-display: fallback;
-}
-
 // page header
 .page-header {
   border-bottom: 1px solid $border-color;
@@ -447,9 +435,6 @@ img.logo {
   margin-left: 30px;
   margin-right: -20px;
 }
-.template-home img.logo {
-  width: 120px;
-}
 
 @include media-breakpoint-down(sm) {
   img.logo {
@@ -461,9 +446,6 @@ img.logo {
 @include media-breakpoint-up(sm) {
   .page-header {
     min-height: 88px;
-  }
-  .template-home .page-header {
-    min-height: 104px;
   }
 }
 
@@ -537,7 +519,6 @@ a.footnote-ref {
 /* bibliography styling ----------------------------------------------------- */
 // Added in pandoc 2.11: https://github.com/jgm/pandoc-templates/commit/9904bf71
 
-// div.csl-bib-body { }
 div.csl-entry {
   clear: both;
 }
